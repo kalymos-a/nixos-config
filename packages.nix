@@ -5,7 +5,7 @@
    vscode
    steam
    gparted
-   neofetch
+   fastfetch
    vivaldi
    unzip
    prismlauncher
