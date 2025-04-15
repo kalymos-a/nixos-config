@@ -1,5 +1,6 @@
-# Ignore system-specific hardware config
+# Ignore system-specific hardware config and nvidia
 hardware-configuration.nix
+nvidia.nix
 
 # Backup files
 *.bak
