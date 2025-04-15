@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # Set the path to your NixOS config directory
-CONFIG_DIR="etc/nixos"
+CONFIG_DIR="/etc/nixos"
 cd "$CONFIG_DIR"
 
 echo "🛠️  Rebuilding NixOS configuration..."
