@@ -5,6 +5,7 @@
    vscode
    steam
    gparted
+   fastfetch
    vivaldi
    unzip
    prismlauncher
