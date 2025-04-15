@@ -1,2 +1,16 @@
-# Uhhh basically just ignore the bash script that updates shit
+# Ignore system-specific hardware config
+hardware-configuration.nix
+
+# Backup files
+*.bak
+*~
+
+# Editor-specific files
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# That fucking bash file
 update.sh
