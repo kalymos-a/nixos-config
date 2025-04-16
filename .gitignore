@@ -1,5 +1,4 @@
-# Ignore system-specific hardware config and nvidia
-hardware-configuration.nix
+# Ignore nvidia stuff because you aren't touching it anyway
 nvidia.nix
 
 # Backup files
