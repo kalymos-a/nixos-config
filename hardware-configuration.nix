@@ -23,6 +23,12 @@
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
+  
+  fileSystems."/run/media/kalymosa" = {
+    device = "/dev/disk/by-uuid/468adffd-661e-4d64-b86a-15caad86b974";
+    fsType = "ext4"; # or whatever your filesystem is (e.g., "ntfs", "btrfs", etc.)
+    options = [ "defaults" ];
+  };
 
   swapDevices = [ ];
 
