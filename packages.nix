@@ -11,6 +11,7 @@
    prismlauncher
    obs-studio
    git
+   android-tools
  ];
  programs.steam.enable = true;
 }
