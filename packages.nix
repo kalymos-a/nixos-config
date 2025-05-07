@@ -12,6 +12,7 @@
    obs-studio
    git
    android-tools
+   godot_4
  ];
  programs.steam.enable = true;
 }
