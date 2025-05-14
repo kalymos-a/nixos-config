@@ -11,7 +11,6 @@
 	  ./packages.nix
     ./nvidia.nix
     ./DeleteOldShit.nix
-    ./awesomesauce.nix
     ];
 
   # Bootloader.
@@ -92,6 +91,10 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  services.xserver.enable = true;
+  services.xserver.desktopManager.budgie.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
