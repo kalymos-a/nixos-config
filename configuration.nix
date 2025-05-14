@@ -11,6 +11,7 @@
 	  ./packages.nix
     ./nvidia.nix
     ./DeleteOldShit.nix
+    <home-manager/nixos>
     ];
 
   # Bootloader.
@@ -87,15 +88,27 @@
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "kalymosa";
-
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-
   system.stateVersion = "24.11"; # Did you read the comment?
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
   nix.settings.auto-optimise-store = true;
 
+  home-manager.users.kalymosa = { pkgs, ... }: {
+    home.packages = with pkgs; [
+      # User-specific packages here
+      
+    ];
+    
+    # Programs that have dedicated Home Manager modules
+    programs.git = {
+      enable = true;
+      userName = "kalymosa";
+      userEmail = "kalymosarcarne@gmail.com";
+    };
+    home.stateVersion = "24.11";
+    # Allow Home Manager to manage itself
+    programs.home-manager.enable = true;
+  };
 }
