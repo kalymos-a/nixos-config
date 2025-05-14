@@ -15,6 +15,8 @@
    godot_4
    wget
    kando
+   ghostty
+  
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
