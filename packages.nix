@@ -16,6 +16,7 @@
    kando
    ghostty
    git
+   nordic
   
  ];
  programs.steam.enable = true;
