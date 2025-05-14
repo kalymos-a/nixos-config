@@ -92,21 +92,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  services.xserver.enable = true;
-  services.xserver.desktopManager.budgie.enable = true;
-  services.xserver.displayManager.lightdm.enable = true;
-
-  
-  systemd.services.kando = {
-    description = "Run kando at startup";
-    wantedBy = [ "multi-user.target" ];
-    after = [ "network.target" ];  # Optional, only if kando needs the network
-    serviceConfig = {
-      ExecStart = "/run/current-system/sw/bin/kando";
-      Restart = "on-failure";
-    };
-  };
-  
 
   system.stateVersion = "24.11"; # Did you read the comment?
   system.autoUpgrade.enable = true;
