@@ -14,6 +14,7 @@
    android-tools
    godot_4
    wget
+   kando
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
