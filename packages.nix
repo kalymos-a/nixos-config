@@ -15,6 +15,7 @@
    godot_4
    wget
    kando
+   warp-terminal
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
