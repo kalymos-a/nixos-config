@@ -10,6 +10,7 @@
     ./hardware-configuration.nix
 	  ./packages.nix
     ./nvidia.nix
+    ./DeleteOldShit.nix
     ];
 
   # Bootloader.
@@ -93,18 +94,9 @@
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "kalymosa";
 
-  # Install firefox.
-  programs.firefox.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -134,9 +126,6 @@
   system.stateVersion = "24.11"; # Did you read the comment?
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
-  nix.gc.automatic = true;
-  nix.gc.dates = "daily";
-  nix.gc.options = "--delete-older-than +3";
   nix.settings.auto-optimise-store = true;
 
 }
