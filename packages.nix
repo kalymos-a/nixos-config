@@ -18,6 +18,7 @@
    git
    nordic
    r2modman
+   obsidian
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
