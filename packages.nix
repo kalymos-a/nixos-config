@@ -17,7 +17,7 @@
    ghostty
    git
    nordic
-  
+   r2modman
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
