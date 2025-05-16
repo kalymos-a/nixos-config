@@ -19,6 +19,7 @@
    nordic
    r2modman
    obsidian
+   lua
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
