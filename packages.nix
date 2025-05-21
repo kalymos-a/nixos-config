@@ -20,6 +20,7 @@
    r2modman
    obsidian
    lua
+   everest-mons
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
