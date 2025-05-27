@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
 
 {
@@ -11,6 +7,7 @@
 	  ./packages.nix
     ./nvidia.nix
     ./DeleteOldShit.nix
+    ./desktop.nix
     ];
 
   # Bootloader.
@@ -44,8 +41,6 @@
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
   };
-  # GNOMEEEEE
-
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -88,7 +83,7 @@
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "kalymosa";
-  # Allow unfree packages
+  
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "25.05"; # Did you read the comment?
   system.autoUpgrade.enable = true;

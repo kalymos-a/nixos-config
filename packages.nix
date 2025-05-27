@@ -24,8 +24,5 @@
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
- services.xserver.enable = true;
- services.xserver.desktopManager.budgie.enable = true;
- services.xserver.displayManager.lightdm.enable = true;
-
+ # Perchance change the programs you declarably enable to their own file or smth idk
 }
