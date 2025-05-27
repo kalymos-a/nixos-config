@@ -21,7 +21,10 @@
    obsidian
    lua
    protonvpn-gui
-   kdePackages.qtshadertools
+   # Following are for the KDE Wallpaper Engine extention, remove these if shits fucked or smth
+   kdePackages.qtwebsockets
+   python313Packages.websockets
+   kdePackages.qtwebchannel
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
