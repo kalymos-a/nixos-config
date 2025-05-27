@@ -90,7 +90,7 @@
   services.xserver.displayManager.autoLogin.user = "kalymosa";
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  system.stateVersion = "24.11"; # Did you read the comment?
+  system.stateVersion = "25.05"; # Did you read the comment?
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
   nix.settings.auto-optimise-store = true;
