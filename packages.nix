@@ -21,6 +21,7 @@
    obsidian
    lua
    protonvpn-gui
+   kdePackages.qtshadertools
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
