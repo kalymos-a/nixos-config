@@ -25,6 +25,7 @@
    kdePackages.qtwebsockets
    python313Packages.websockets
    kdePackages.qtwebchannel
+   python3Full
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
