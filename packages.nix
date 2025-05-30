@@ -21,6 +21,7 @@
    obsidian
    lua
    protonvpn-gui
+   inkscape-with-extensions
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
