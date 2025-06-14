@@ -25,5 +25,6 @@
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
+ services.flatpak.enable = true;
  # Perchance change the programs you declarably enable to their own file or smth idk
 }
