@@ -19,6 +19,7 @@
    protonvpn-gui
    inkscape-with-extensions
    xclicker
+   linuxKernel.packages.linux_zen.v4l2loopback
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
