@@ -18,6 +18,7 @@
    lua
    protonvpn-gui
    inkscape-with-extensions
+   xclicker
  ];
  programs.steam.enable = true;
  programs.firefox.enable = true;
