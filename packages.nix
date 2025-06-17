@@ -2,16 +2,12 @@
 {
  environment.systemPackages = with pkgs; [
    discord
-   vscode
    steam
    gparted
    fastfetch
-   vivaldi
    unzip
    prismlauncher
    obs-studio
-   android-tools
-   godot_4
    wget
    kando
    ghostty

@@ -6,7 +6,6 @@
     ./hardware-configuration.nix
 	  ./packages.nix
     ./nvidia.nix
-    ./DeleteOldShit.nix
     ./desktop.nix
     ];
 
