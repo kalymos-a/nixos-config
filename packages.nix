@@ -19,8 +19,8 @@
    protonvpn-gui
    inkscape-with-extensions
    xclicker
-   linuxKernel.packages.linux_zen.v4l2loopback
  ];
+ programs.obs-studio.enableVirtualCamera = true;
  programs.steam.enable = true;
  programs.firefox.enable = true;
  services.flatpak.enable = true;
