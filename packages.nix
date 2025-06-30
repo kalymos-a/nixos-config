@@ -19,6 +19,7 @@
    protonvpn-gui
    inkscape-with-extensions
    xclicker
+   tauon
  ];
  programs.obs-studio.enableVirtualCamera = true;
  programs.steam.enable = true;
