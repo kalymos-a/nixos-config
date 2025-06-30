@@ -20,6 +20,7 @@
    inkscape-with-extensions
    xclicker
    tauon
+   everest-mons
  ];
  programs.obs-studio.enableVirtualCamera = true;
  programs.steam.enable = true;
