@@ -21,6 +21,7 @@
    xclicker
    tauon
    everest-mons
+   virtualbox
  ];
  programs.obs-studio.enableVirtualCamera = true;
  programs.steam.enable = true;
