@@ -9,6 +9,9 @@
     ./desktop.nix
     ];
 
+  # probably move this somewhere
+  virtualisation.virtualbox.host.enable = true;
+  
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
