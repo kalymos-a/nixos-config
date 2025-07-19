@@ -1,6 +1,10 @@
 # Ignore nvidia stuff because you aren't touching it anyway
 nvidia.nix
 
+# Hardware config because two devices gets wacky
+
+hardware-configuration.nix
+
 # Backup files
 *.bak
 *~
